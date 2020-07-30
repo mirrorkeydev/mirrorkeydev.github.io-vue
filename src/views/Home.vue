@@ -29,55 +29,56 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-.home {
-  height: 100%;
-}
-
-.nav-link {
-  color: white;
-  padding: 0 1vw;
-  text-decoration: none;
-  font-size: 3vw;
-}
-
-#nav-container {
+#nav-container
+{
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  line-height: 13vw;
+  padding: 5vw;
   position: fixed;
   right: 5vw;
-  padding: 5vw;
-  line-height: 13vw;
   z-index: 1;
 }
-
-#title {
-  color: white;
-  font-size: 15vw;
-  font-family: 'Rubik', sans-serif;
-  position: relative;
-  height: 100%;
-  text-align: left;
-  display: flex;
+#title
+{
   align-items: flex-end;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15vw;
+  height: 100%;
   justify-content: left;
+  line-height: 13vw;
   margin: 0;
   padding: 10vw;
-  line-height: 13vw;
-  box-sizing: border-box;
+  position: relative;
+  text-align: left;
 }
-
-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;  /* fallback  */
+.home
+{
+  height: 100%;
+}
+.nav-link
+{
+  color: white;
+  font-size: 3vw;
+  padding: 0 1vw;
+  text-decoration: none;
+}
+video
+{
+  border: white 5vw solid;
+  box-sizing: border-box;
+  height: 100vh; /* fallback */
   height: calc(var(--vh, 1vh) * 100);
+  left: 0;
+  margin: 0;
+  object-fit: cover;
   position: fixed;
   top: 0;
-  left: 0;
-  box-sizing: border-box;
-  border: white 5vw solid;
-  margin: 0;
+  width: 100vw;
 }
 
 /* Screens > 1000px wide */
