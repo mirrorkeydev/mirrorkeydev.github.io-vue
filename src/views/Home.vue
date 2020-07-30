@@ -14,10 +14,11 @@ export default {
 </script>
 
 <style lang="scss">
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 #title {
   color: white;
   font-size: 15vw;
+  font-family: 'Rubik', sans-serif;
   position: relative;
   height: 100vh;
   text-align: center;
@@ -42,7 +43,6 @@ video {
   left: 0;
   box-sizing: border-box;
   border: white 5vw solid;
-  padding: 0;
   margin: 0;
 }
 
