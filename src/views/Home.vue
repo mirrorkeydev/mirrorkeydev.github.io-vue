@@ -39,6 +39,7 @@ export default {
   right: 5vw;
   padding: 5vw;
   line-height: 13vw;
+  z-index: 1;
 }
 
 #title {
