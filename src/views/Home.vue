@@ -14,8 +14,15 @@
 
 <script>
 export default {
-  name: 'Home'
-}
+  name: 'Home',
+  methods: {
+    mounted () {
+      // Workaround to correctly set the viewheight on mobile
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+  }
+};
 </script>
 
 <style lang="scss">
@@ -63,7 +70,8 @@ export default {
 video {
   object-fit: cover;
   width: 100vw;
-  height: 100vh;
+  height: 100vh;  /* fallback  */
+  height: calc(var(--vh, 1vh) * 100);
   position: fixed;
   top: 0;
   left: 0;
