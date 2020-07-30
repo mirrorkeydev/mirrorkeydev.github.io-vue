@@ -20,6 +20,7 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .home {
   height: 100%;
@@ -34,7 +35,8 @@ export default {
 
 #nav-container {
   color: white;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   position: fixed;
   right: 5vw;
   padding: 5vw;
