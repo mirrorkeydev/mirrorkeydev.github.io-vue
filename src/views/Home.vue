@@ -3,7 +3,12 @@
     <video autoplay loop muted>
       <source src="../assets/Done-2.mp4" type="video/mp4">
     </video>
-    <h1 id="title">melanie</h1>
+    <nav id="nav-container">
+      <router-link to="" class="nav-link">about</router-link>
+      <router-link to="" class="nav-link">projects</router-link>
+      <router-link to="" class="nav-link">contact</router-link>
+    </nav>
+    <h1 id="title" class="unselectable">melanie<br>gutzmann</h1>
   </div>
 </template>
 
@@ -15,23 +20,41 @@ export default {
 
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+.home {
+  height: 100%;
+}
+
+.nav-link {
+  color: white;
+  padding: 0 1vw;
+  text-decoration: none;
+  font-size: 3vw;
+}
+
+#nav-container {
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  position: fixed;
+  right: 5vw;
+  padding: 5vw;
+  line-height: 13vw;
+}
+
 #title {
   color: white;
   font-size: 15vw;
   font-family: 'Rubik', sans-serif;
   position: relative;
-  height: 100vh;
-  text-align: center;
+  height: 100%;
+  text-align: left;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-end;
+  justify-content: left;
   margin: 0;
-  padding: 0;
-  user-select: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  -o-user-select: none;
+  padding: 10vw;
+  line-height: 13vw;
+  box-sizing: border-box;
 }
 
 video {
@@ -44,6 +67,38 @@ video {
   box-sizing: border-box;
   border: white 5vw solid;
   margin: 0;
+}
+
+/* Screens > 1000px wide */
+@media screen and (min-width: 1000px) {
+  #title {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+
+  .nav-link {
+    font-size: 2vw;
+  }
+
+  #nav-container {
+    padding: 4vw;
+  }
+}
+
+/* Screens > 2000px wide */
+@media screen and (min-width: 2000px) {
+  #title {
+    font-size: 7vw;
+    line-height: 7vw;
+  }
+
+  .nav-link {
+    font-size: 1vw;
+  }
+
+  #nav-container {
+    padding: 2vw;
+  }
 }
 
 </style>
