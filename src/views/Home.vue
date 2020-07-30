@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <video autoplay loop muted>
+    <video autoplay loop muted playsinline>
       <source src="../assets/Done-2.mp4" type="video/mp4">
     </video>
     <nav id="nav-container">
