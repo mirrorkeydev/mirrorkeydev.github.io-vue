@@ -14,20 +14,11 @@
 
 <script>
 export default {
-  name: 'Home',
-  methods: {
-    mounted () {
-      // Workaround to correctly set the viewheight on mobile
-      const vh = window.innerHeight * 0.01;
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-  }
+  name: 'Home'
 };
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 #nav-container
 {
@@ -58,7 +49,7 @@ export default {
 }
 .home
 {
-  background-color: #789c33;
+  background-color: var(--placeholder-green);
   height: 100%;
 }
 .nav-link

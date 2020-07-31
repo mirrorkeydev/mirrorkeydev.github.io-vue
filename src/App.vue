@@ -5,6 +5,12 @@
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+:root {
+  --placeholder-green: #789c33;
+}
 
 html, body {
   height: calc(100vh - calc(100vh - 100%));
