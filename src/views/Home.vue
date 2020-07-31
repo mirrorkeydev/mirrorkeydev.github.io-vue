@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <video autoplay loop muted playsinline>
-      <source src="../assets/Done-2.mp4" type="video/mp4">
+      <source src="../assets/desktop-background.mp4" type="video/mp4">
     </video>
     <nav id="nav-container">
       <router-link to="about" class="nav-link">about</router-link>
-      <router-link to="" class="nav-link">projects</router-link>
-      <router-link to="" class="nav-link">contact</router-link>
+      <router-link to="projects" class="nav-link">projects</router-link>
+      <router-link to="contact" class="nav-link">contact</router-link>
     </nav>
     <h1 id="title" class="unselectable">melanie<br>gutzmann</h1>
   </div>
