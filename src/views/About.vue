@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import SecondaryHeader from '@/components/SecondaryHeader.vue';
+import SecondaryHeader from '../components/SecondaryHeader.vue';
 
 export default {
   name: 'About',
