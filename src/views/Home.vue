@@ -4,7 +4,7 @@
       <source src="../assets/Done-2.mp4" type="video/mp4">
     </video>
     <nav id="nav-container">
-      <router-link to="" class="nav-link">about</router-link>
+      <router-link to="about" class="nav-link">about</router-link>
       <router-link to="" class="nav-link">projects</router-link>
       <router-link to="" class="nav-link">contact</router-link>
     </nav>
@@ -58,6 +58,7 @@ export default {
 }
 .home
 {
+  background-color: #789c33;
   height: 100%;
 }
 .nav-link
