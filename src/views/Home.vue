@@ -72,7 +72,6 @@ video
   border: white 5vw solid;
   box-sizing: border-box;
   height: 100vh;
-  min-height: -webkit-fill-available;
   left: 0;
   margin: 0;
   object-fit: cover;

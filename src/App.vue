@@ -7,7 +7,7 @@
 <style lang="scss">
 
 html, body {
-  height: -webkit-fill-available;
+  height: 100vh;
   width: 100vw;
   margin: 0;
 }
