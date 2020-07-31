@@ -71,7 +71,7 @@ video
 {
   border: white 5vw solid;
   box-sizing: border-box;
-  height: 100vh;
+  height: calc(100vh - calc(100vh - 100%));
   left: 0;
   margin: 0;
   object-fit: cover;
