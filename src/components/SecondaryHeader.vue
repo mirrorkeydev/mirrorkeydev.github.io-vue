@@ -1,11 +1,11 @@
 <template>
   <div class="secondary-header">
     <router-link :to="{ name: '/landing' }">
-      <h1 id="header-title" class="unselectable">
-        melanie gutzmann
-      </h1>
+      <span id="back-arrow">🡰</span>
     </router-link>
-    <h1 class="unselectable">• {{ subtitle }}</h1>
+    <h1 id="header-title" class="unselectable">
+      {{ subtitle }}
+    </h1>
   </div>
 </template>
 
@@ -42,6 +42,7 @@ h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 5vw;
   margin: 0;
+  padding-left: 3vw;
 }
 
 a {
@@ -50,6 +51,13 @@ a {
 
 a:hover {
   cursor: pointer;
+}
+
+#back-arrow {
+  color: #2c3e50;
+  font-size: 5vw;
+  position: relative;
+  bottom: 3px;
 }
 
 @-webkit-keyframes GradientShift {
@@ -74,6 +82,12 @@ a:hover {
     margin: 2vw 3vw;
   }
 
+  #back-arrow {
+    font-size: 2vw;
+    position: relative;
+    bottom: 5px;
+  }
+
   h1 {
     font-size: 3vw;
   }
@@ -83,6 +97,10 @@ a:hover {
 @media screen and (max-width: 600px) {
   .secondary-header {
     margin: 5vw 7vw;
+  }
+
+  #back-arrow {
+    font-size: 7vw;
   }
 
   h1 {

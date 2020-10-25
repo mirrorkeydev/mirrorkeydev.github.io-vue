@@ -2,7 +2,12 @@
   <div class="contact">
     <SecondaryHeader subtitle="contact"/>
     <div class="main-container">
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+      <div>
+        <div><a href="mailto:mirrorkeydev@gmail.com"><span></span>mirrorkeydev<span>@gmail.com</span></a></div>
+        <div><a href="https://github.com/mirrorkeydev"><span>github.com/</span>mirrorkeydev<span></span></a></div>
+        <div><a href="https://discord.com/"><span></span>mirrorkeydev<span>#0120</span></a></div>
+        <div><a href="https://www.linkedin.com/in/mirrorkeydev/"><span>linkedin.com/in/</span>mirrorkeydev<span></span></a></div>
+      </div>
     </div>
   </div>
 </template>
@@ -26,18 +31,64 @@ export default {
 }
 
 .main-container {
+  color: rgb(129, 129, 129);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: calc(max(3vh, 20px));
+  line-height: 3rem;
+  padding-top: 15vh;
+  text-align: center;
+}
+
+.main-container span {
+  color: rgb(49, 49, 49);
+  font-weight: 600;
+}
+
+.main-container span:first-of-type {
+  text-align:right
+}
+
+.main-container {
   font-style: 'Roboto', sans-serif;
   margin: 5vw;
 }
 
+a {
+  color: rgb(129, 129, 129);
+  text-decoration: none;
+}
+
 /* Screens > 1000px wide */
 @media screen and (min-width: 1000px) {
+  .main-container {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    padding-top: 10%;
+    text-align: center;
+  }
 
+  .main-container span {
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 /* Screens > 2000px wide */
 @media screen and (min-width: 2000px) {
+  .main-container {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    padding-top: 10%;
+    text-align: center;
+  }
 
+  .main-container span {
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 </style>
