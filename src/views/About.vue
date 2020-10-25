@@ -2,7 +2,14 @@
   <div class="about">
     <SecondaryHeader subtitle="about"/>
     <div class="main-container">
-      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+      <p>
+        Hello! My name is Melanie, and I'm a junior at Oregon State University
+        studying CS. During the school year, I work at OSU's Center for Applied
+        Systems and Software, writing software for the
+        Oregon Department of Transportation and the Linux Foundation. Last summer
+        I was a STEP intern at Google, and I'm currently looking for summer 2021
+        opportunities.
+      </p>
     </div>
   </div>
 </template>
@@ -26,18 +33,29 @@ export default {
 }
 
 .main-container {
-  font-style: 'Roboto', sans-serif;
-  margin: 5vw;
+  color: rgb(129, 129, 129);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: calc(max(3vh, 20px));
+  line-height: 2rem;
+  margin: 4vw 7vw;
+  text-align: left;
 }
 
 /* Screens > 1000px wide */
 @media screen and (min-width: 1000px) {
-
+  .main-container {
+    margin: 4vw 10vw;
+    line-height: 3rem;
+  }
 }
 
 /* Screens > 2000px wide */
 @media screen and (min-width: 2000px) {
-
+  .main-container {
+    margin: 4vw 20vw;
+    line-height: 3rem;
+  }
 }
 
 </style>
