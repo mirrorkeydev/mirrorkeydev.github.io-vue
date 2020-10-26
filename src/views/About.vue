@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <SecondaryHeader subtitle="about"/>
-    <div class="main-container">
+    <div class="about-container">
       <p>
         Hello! My name is Melanie, and I'm a junior at Oregon State University
         studying CS. During the school year, I work at OSU's Center for Applied
@@ -25,14 +25,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .about
 {
   background-color: white;
 }
 
-.main-container {
+.about-container {
   color: rgb(129, 129, 129);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -44,7 +44,7 @@ export default {
 
 /* Screens > 1000px wide */
 @media screen and (min-width: 1000px) {
-  .main-container {
+  .about-container {
     margin: 4vw 10vw;
     line-height: 3rem;
   }
@@ -52,7 +52,7 @@ export default {
 
 /* Screens > 2000px wide */
 @media screen and (min-width: 2000px) {
-  .main-container {
+  .about-container {
     margin: 4vw 20vw;
     line-height: 3rem;
   }

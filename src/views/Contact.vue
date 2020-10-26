@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
     <SecondaryHeader subtitle="contact"/>
-    <div class="main-container">
+    <div class="contact-container">
       <div>
         <div><a href="mailto:mirrorkeydev@gmail.com"><span></span>mirrorkeydev<span>@gmail.com</span></a></div>
         <div><a href="https://github.com/mirrorkeydev"><span>github.com/</span>mirrorkeydev<span></span></a></div>
@@ -23,14 +23,14 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .projects
 {
   background-color: white;
 }
 
-.main-container {
+.contact-container {
   color: rgb(129, 129, 129);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -40,18 +40,13 @@ export default {
   text-align: center;
 }
 
-.main-container span {
+.contact-container span {
   color: rgb(49, 49, 49);
   font-weight: 600;
 }
 
-.main-container span:first-of-type {
+.contact-container span:first-of-type {
   text-align:right
-}
-
-.main-container {
-  font-style: 'Roboto', sans-serif;
-  margin: 5vw;
 }
 
 a {
@@ -61,14 +56,14 @@ a {
 
 /* Screens > 1000px wide */
 @media screen and (min-width: 1000px) {
-  .main-container {
+  .contact-container {
     font-size: 2.5rem;
     line-height: 4rem;
     padding-top: 10%;
     text-align: center;
   }
 
-  .main-container span {
+  .contact-container span {
     width: 300px;
     display: inline-block;
     text-align: left;
@@ -77,14 +72,14 @@ a {
 
 /* Screens > 2000px wide */
 @media screen and (min-width: 2000px) {
-  .main-container {
+  .contact-container {
     font-size: 2.5rem;
     line-height: 4rem;
     padding-top: 10%;
     text-align: center;
   }
 
-  .main-container span {
+  .contact-container span {
     width: 300px;
     display: inline-block;
     text-align: left;
