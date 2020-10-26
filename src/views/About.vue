@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <SecondaryHeader subtitle="about"/>
+    <SecondaryHeader on="about"/>
     <div class="about-container">
       <p>
         Hello! My name is Melanie, and I'm a junior at Oregon State University

@@ -1,11 +1,26 @@
 <template>
   <div class="secondary-header">
     <router-link :to="{ name: '/landing' }">
-      <img id="back-arrow" src="@/assets/back_arrow.svg" alt="">
+      <img id="back-arrow" src="@/assets/back_arrow.svg" alt="" />
     </router-link>
-    <h1 id="header-title" class="unselectable">
-      {{ subtitle }}
-    </h1>
+    <router-link to="about">
+      <h1 class="unselectable header-link"
+        :class="{ 'header-title': on == 'about' }">
+        about
+      </h1>
+    </router-link>
+    <router-link to="projects">
+      <h1 class="unselectable header-link"
+        :class="{ 'header-title': on == 'projects' }">
+        projects
+      </h1>
+    </router-link>
+    <router-link to="contact">
+      <h1 class="unselectable header-link"
+        :class="{ 'header-title': on == 'contact' }">
+        contact
+      </h1>
+    </router-link>
   </div>
 </template>
 
@@ -13,7 +28,7 @@
 export default {
   name: 'SecondaryHeader',
   props: {
-    subtitle: String
+    on: String
   }
 };
 </script>
@@ -25,7 +40,11 @@ export default {
   text-align: left;
 }
 
-#header-title {
+.header-link {
+  color: rgb(202, 202, 202);
+}
+
+.header-title {
   animation: GradientShift 4s ease infinite;
   -moz-animation: GradientShift 4s ease infinite;
   -webkit-animation: GradientShift 4s ease infinite;
@@ -33,16 +52,15 @@ export default {
   background-image: linear-gradient(104deg, #049bb0, #a5bb43);
   background-size: 200% 200%;
   color: var(--placeholder-green);
-  margin: 0 1vw 0 0;
   -webkit-text-fill-color: transparent;
 }
 
 h1 {
   display: inline-block;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 5vw;
   margin: 0;
-  padding-left: 3vw;
+  padding-left: 2vw;
 }
 
 a {
@@ -56,22 +74,41 @@ a:hover {
 #back-arrow {
   display: inline-block;
   height: 3vw;
+  padding-right: 1vw;
 }
 
 @-webkit-keyframes GradientShift {
-  0%{background-position:0% 65%}
-  50%{background-position:100% 36%}
-  100%{background-position:0% 65%}
+  0% {
+    background-position: 0% 65%;
+  }
+  50% {
+    background-position: 100% 36%;
+  }
+  100% {
+    background-position: 0% 65%;
+  }
 }
 @-moz-keyframes GradientShift {
-  0%{background-position:0% 65%}
-  50%{background-position:100% 36%}
-  100%{background-position:0% 65%}
+  0% {
+    background-position: 0% 65%;
+  }
+  50% {
+    background-position: 100% 36%;
+  }
+  100% {
+    background-position: 0% 65%;
+  }
 }
 @keyframes GradientShift {
-  0%{background-position:0% 65%}
-  50%{background-position:100% 36%}
-  100%{background-position:0% 65%}
+  0% {
+    background-position: 0% 65%;
+  }
+  50% {
+    background-position: 100% 36%;
+  }
+  100% {
+    background-position: 0% 65%;
+  }
 }
 
 /* Screens > 1000px wide */
@@ -102,6 +139,9 @@ a:hover {
   h1 {
     font-size: 10vw;
   }
-}
 
+  h1:not(.header-title) {
+    display: none;
+  }
+}
 </style>

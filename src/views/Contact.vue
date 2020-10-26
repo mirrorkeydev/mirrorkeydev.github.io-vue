@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <SecondaryHeader subtitle="contact"/>
+    <SecondaryHeader on="contact"/>
     <div class="contact-container">
       <div>
         <div><a href="mailto:mirrorkeydev@gmail.com"><span></span>mirrorkeydev<span>@gmail.com</span></a></div>
