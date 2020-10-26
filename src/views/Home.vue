@@ -20,6 +20,12 @@ export default {
 
 <style lang="scss">
 
+html, body {
+  height: calc(100vh - calc(100vh - 100%));
+  width: 100vw;
+  margin: 0;
+}
+
 #nav-container
 {
   color: white;

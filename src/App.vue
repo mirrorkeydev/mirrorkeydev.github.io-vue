@@ -12,12 +12,6 @@
   --placeholder-green: #789c33;
 }
 
-html, body {
-  height: calc(100vh - calc(100vh - 100%));
-  width: 100vw;
-  margin: 0;
-}
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
