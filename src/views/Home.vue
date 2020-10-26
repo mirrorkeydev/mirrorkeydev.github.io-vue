@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <video autoplay loop muted playsinline>
+    <video autoplay loop muted playsinline id="home-video">
       <source src="../assets/desktop-background.mp4" type="video/mp4">
     </video>
     <nav id="nav-container">
@@ -65,7 +65,8 @@ html, body {
   padding: 0 1vw;
   text-decoration: none;
 }
-.home-video
+
+#home-video
 {
   border: white 5vw solid;
   box-sizing: border-box;
