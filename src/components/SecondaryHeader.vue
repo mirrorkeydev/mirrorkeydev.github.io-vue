@@ -1,7 +1,7 @@
 <template>
   <div class="secondary-header">
     <router-link :to="{ name: '/landing' }">
-      <span id="back-arrow">🡰</span>
+      <img id="back-arrow" src="@/assets/back_arrow.svg" alt="">
     </router-link>
     <h1 id="header-title" class="unselectable">
       {{ subtitle }}
@@ -54,10 +54,8 @@ a:hover {
 }
 
 #back-arrow {
-  color: #2c3e50;
-  font-size: 5vw;
-  position: relative;
-  bottom: 3px;
+  display: inline-block;
+  height: 3vw;
 }
 
 @-webkit-keyframes GradientShift {
@@ -83,9 +81,7 @@ a:hover {
   }
 
   #back-arrow {
-    font-size: 2vw;
-    position: relative;
-    bottom: 5px;
+    height: 2vw;
   }
 
   h1 {
@@ -100,7 +96,7 @@ a:hover {
   }
 
   #back-arrow {
-    font-size: 7vw;
+    height: 6vw;
   }
 
   h1 {
