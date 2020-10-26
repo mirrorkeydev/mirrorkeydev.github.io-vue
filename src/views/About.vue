@@ -10,6 +10,10 @@
         I was a STEP intern at Google, and I'm currently looking for summer 2021
         opportunities.
       </p>
+      <p>
+        In my free time, I like taking care of my houseplants, attempting art, mending my
+        possessions, and low-stakes hiking.
+      </p>
     </div>
   </div>
 </template>
@@ -37,7 +41,7 @@ export default {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: calc(max(3vh, 20px));
-  line-height: 2rem;
+  line-height: calc(max(3vh, 1.5rem));
   margin: 4vw 7vw;
   text-align: left;
 }
@@ -45,16 +49,16 @@ export default {
 /* Screens > 1000px wide */
 @media screen and (min-width: 1000px) {
   .about-container {
-    margin: 4vw 10vw;
-    line-height: 3rem;
+    margin: 7vw 10vw;
+    line-height: normal;
   }
 }
 
 /* Screens > 2000px wide */
 @media screen and (min-width: 2000px) {
   .about-container {
-    margin: 4vw 20vw;
-    line-height: 3rem;
+    margin: 10vw 20vw;
+    line-height: normal;
   }
 }
 

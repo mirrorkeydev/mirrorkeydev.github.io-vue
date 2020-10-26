@@ -65,7 +65,7 @@ html, body {
   padding: 0 1vw;
   text-decoration: none;
 }
-video
+.home-video
 {
   border: white 5vw solid;
   box-sizing: border-box;
