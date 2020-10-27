@@ -8,7 +8,7 @@
             <div class="project-container">
               <img class="project-img" src="@/assets/sprout.png" alt="">
               <div class="project-text">
-                <p class="strong">Sprout</p><p class="italic">Personal Project, 7/2020</p>
+                <p class="strong">Sprout</p><p class="italic">Personal Project, June 2020</p>
                 <p class="main">
                   A dashboard that shows real-time statistics about my
                   plants and their environment. Offers soil moisture charts for each plant connected
@@ -32,7 +32,7 @@
             <div class="project-container">
               <img class="project-img" src="@/assets/mathlang.png" alt="">
               <div class="project-text">
-                <p class="strong">MathLang</p><p class="italic">Programming Language Fundamentals Final, 3/2020</p>
+                <p class="strong">MathLang</p><p class="italic">Programming Language Fundamentals Final, March 2020</p>
                 <p class="main">
                   A stack-based language that performs basic mathematic/logic operations.
                   Values include integers, doubles, booleans, tuples, commands, and functions.
@@ -44,7 +44,7 @@
             <div class="project-container">
               <img class="project-img" src="@/assets/visualizations.png" alt="">
               <div class="project-text">
-                <p class="strong">Visualizations</p><p class="italic">Personal Project, 2/2020</p>
+                <p class="strong">Visualizations</p><p class="italic">Personal Project, February 2020</p>
                 <p class="main">
                   Various visualizations created as an exercise in data processing.
                   Includes interactive charts and original infographics, exploring
@@ -55,7 +55,7 @@
             <div class="project-container">
               <img class="project-img" src="@/assets/catspot.png" alt="">
               <div class="project-text">
-                <p class="strong">CatSpot</p><p class="italic">Web Development Final, 7/2020</p>
+                <p class="strong">CatSpot</p><p class="italic">Web Development Final, December 2019</p>
                 <p class="main">
                   A web app that allows students to track cat spottings on campus.
                   Cats can be given names and assigned pictures, energy levels, sociability status,
@@ -66,7 +66,7 @@
             <div class="project-container">
               <img class="project-img" src="@/assets/appstract.png" alt="">
               <div class="project-text">
-                <p class="strong">Appstract</p><p class="italic">Personal Project, 3/2019</p>
+                <p class="strong">Appstract</p><p class="italic">Personal Project, March 2019</p>
                 <p class="main">
                   An artistically abstract Android icon pack. 300+ icons supported across 25+ launchers.
                   Built on the open source CandyBar dashboard. Available on the Google Play Store
@@ -84,31 +84,31 @@
                 <source src="../assets/desktop-background.mp4" type="video/mp4">
               </video>
               <div class="project-text buffered">
-                <p class="left strong">Iridescent Wave</p><p class="right italic">4/2020</p>
+                <p class="left strong">Iridescent Wave</p><p class="right">April 2020</p>
               </div>
             </div>
             <div class="project-container">
               <img class="project-img" src="@/assets/rope8.png" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Coil</p><p class="right italic">3/2020</p>
+                <p class="left strong">Coil</p><p class="right">March 2020</p>
               </div>
             </div>
             <div class="project-container">
               <img class="project-img" src="@/assets/tile3.png" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Bounce</p><p class="right italic">9/2019</p>
+                <p class="left strong">Bounce</p><p class="right">September 2019</p>
               </div>
             </div>
             <div class="project-container">
               <img class="project-img" src="@/assets/glassy5.png" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Glassy</p><p class="right italic">6/2019</p>
+                <p class="left strong">Glassy</p><p class="right">June 2019</p>
               </div>
             </div>
             <div class="project-container">
               <img class="project-img" src="@/assets/room5.png" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Suede</p><p class="right italic">9/2018</p>
+                <p class="left strong">Suede</p><p class="right">September 2018</p>
               </div>
             </div>
           </div>
@@ -119,25 +119,25 @@
             <div class="project-container">
               <img class="project-img" src="@/assets/octopus.png" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Minoa</p><p class="right italic">9/2020</p>
+                <p class="left strong">Minoa</p><p class="right">September 2020</p>
               </div>
             </div>
             <div class="project-container">
               <img class="project-img" src="@/assets/maroon.png" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Peach</p><p class="right italic">9/2020</p>
+                <p class="left strong">Peach</p><p class="right">September 2020</p>
               </div>
             </div>
             <div class="project-container">
               <img class="project-img" src="@/assets/lamy.jpg" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Lamy Safari</p><p class="right italic">3/2020</p>
+                <p class="left strong">Lamy Safari</p><p class="right">March 2020</p>
               </div>
             </div>
             <div class="project-container">
               <img class="project-img" src="@/assets/hills.jpg" alt="">
               <div class="project-text buffered">
-                <p class="left strong">Hills</p><p class="right italic">1/2020</p>
+                <p class="left strong">Hills</p><p class="right">January 2020</p>
               </div>
             </div>
           </div>
@@ -158,6 +158,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 a {
   color: green;
@@ -167,10 +168,6 @@ a {
 .strong {
   color: rgb(78, 78, 78);
   font-weight: 600;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .left {
