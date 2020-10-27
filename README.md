@@ -1,4 +1,5 @@
 # Personal site
+![](https://user-images.githubusercontent.com/35010111/97334305-d6bf5d00-1839-11eb-82cb-b7a07724117f.png)
 
 ## Project setup
 ```
