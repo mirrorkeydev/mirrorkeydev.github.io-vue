@@ -202,8 +202,7 @@ h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 2.5vw;
-  margin: 0;
-  margin: 2vw 0 0 0;
+  margin: 4vw 0;
   text-align: left;
   overflow: auto;
 }
@@ -235,7 +234,7 @@ h3 {
   border: 1px solid rgb(216, 216, 216);
   border-radius: 5px;
   margin: 2vw 0 3vw 0;
-  padding: 5vw;
+  padding: 5vw 5vw 0 5vw;
 }
 
 .sub-container {
@@ -274,14 +273,12 @@ h3 {
 
   .project-text {
     font-size: 1.2vw;
-    margin: 0;
-    margin: 2vw 0 0 0;
     text-align: left;
   }
 
   .project-container {
     margin: 2vw 0 3vw 0;
-    padding: 2vw;
+    padding: 2vw 2vw 0 2vw;
   }
 
   .inside-container {
@@ -289,7 +286,7 @@ h3 {
   }
 
   .project-text.buffered {
-    margin: 2vw 1.5vw 0 1.5vw;
+    margin: 1.75vw;
   }
 }
 
@@ -301,14 +298,12 @@ h3 {
 
   .project-text {
     font-size: 0.8vw;
-    margin: 0;
-    margin: 1vw 0 0 0;
     text-align: left;
   }
 
   .project-container {
     margin: 1vw 0 1.5vw 0;
-    padding: 1.5vw;
+    padding: 1.5vw 1.5vw 0 1.5vw;
   }
 
   .inside-container {
@@ -316,7 +311,7 @@ h3 {
   }
 
   .project-text.buffered {
-    margin: 1.1vw 1.5vw 0 1.5vw;
+    margin: 1.5vw;
   }
 }
 
