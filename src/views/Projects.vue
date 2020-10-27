@@ -273,6 +273,7 @@ h3 {
 
   .project-text {
     font-size: 1.2vw;
+    margin: 2vw 0;
     text-align: left;
   }
 
@@ -298,6 +299,7 @@ h3 {
 
   .project-text {
     font-size: 0.8vw;
+    margin: 1.5vw 0;
     text-align: left;
   }
 
