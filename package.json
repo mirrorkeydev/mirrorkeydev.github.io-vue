@@ -33,6 +33,9 @@
     "vue-template-compiler": "^2.6.11",
     "execa": "latest"
   },
+  "gh-pages-deploy": {
+    "cname": "mirrorkey.dev"
+  },
   "eslintConfig": {
     "root": true,
     "env": {
