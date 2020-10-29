@@ -4,8 +4,8 @@
     <div class="project-text">
       <p class="strong">
         {{ title }}
-        <span v-if="site.length">(<a :href="site" target="_blank" rel="noopener noreferrer">Site</a>) </span>
-        <span v-if="github.length">(<a :href="github" target="_blank" rel="noopener noreferrer">GitHub</a>)</span>
+        <span v-if="github.length" class="right">(<a :href="github" target="_blank" rel="noopener noreferrer">GitHub</a>)</span>
+        <span v-if="site.length" class="right">(<a :href="site" target="_blank" rel="noopener noreferrer">Site</a>) </span>
       </p>
       <p>{{ subtitle }}</p>
       <p class="main">
