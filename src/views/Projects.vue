@@ -5,75 +5,44 @@
         <div class="sub-container">
           <h3>code</h3>
           <div class="inside-container">
-            <div class="project-container">
-              <img class="project-img" src="@/assets/sprout.png" alt="">
-              <div class="project-text">
-                <p class="strong">Sprout</p><p class="italic">Personal Project, June 2020</p>
-                <p class="main">
-                  A dashboard that shows real-time statistics about my
-                  plants and their environment. Offers soil moisture charts for each plant connected
-                  to Sprout and environmental statistics about the plants' environment,
-                  including temperature/humidity. Plus, it's pretty cute.
-                </p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img class="project-img" src="@/assets/noms.png" alt="">
-              <div class="project-text">
-                <p class="strong">noms</p><p class="italic">Google STEP Internship Capstone, Summer 2020</p>
-                <p class="main">
-                  A full-stack web app connecting students and college organizations
-                  to battle food insecurity and food waste. noms allows college organizations to post the
-                  locations of free food on campus and for students to view and receive notifications for
-                  these posts.
-                </p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img class="project-img" src="@/assets/mathlang.png" alt="">
-              <div class="project-text">
-                <p class="strong">MathLang</p><p class="italic">Programming Language Fundamentals Final, March 2020</p>
-                <p class="main">
-                  A stack-based language that performs basic mathematic/logic operations.
-                  Values include integers, doubles, booleans, tuples, commands, and functions.
-                  Can perform basic operations on values and allows conditional logic such as if/else
-                  statements and while/for loops. Interpreter written in Haskell.
-                </p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img class="project-img" src="@/assets/visualizations.png" alt="">
-              <div class="project-text">
-                <p class="strong">Visualizations</p><p class="italic">Personal Project, February 2020</p>
-                <p class="main">
-                  Various visualizations created as an exercise in data processing.
-                  Includes interactive charts and original infographics, exploring
-                  data such as my Netflix binges and the patterns of texts to a friend.
-                </p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img class="project-img" src="@/assets/catspot.png" alt="">
-              <div class="project-text">
-                <p class="strong">CatSpot</p><p class="italic">Web Development Final, December 2019</p>
-                <p class="main">
-                  A web app that allows students to track cat spottings on campus.
-                  Cats can be given names and assigned pictures, energy levels, sociability status,
-                  and a recent location. The interactive map shows cat spottings in the last 24 hours
-                </p>
-              </div>
-            </div>
-            <div class="project-container">
-              <img class="project-img" src="@/assets/appstract.png" alt="">
-              <div class="project-text">
-                <p class="strong">Appstract</p><p class="italic">Personal Project, March 2019</p>
-                <p class="main">
-                  An artistically abstract Android icon pack. 300+ icons supported across 25+ launchers.
-                  Built on the open source CandyBar dashboard. Available on the Google Play Store
-                  <a href="https://play.google.com/store/apps/details?id=com.melon.appstract&hl=en_US">here</a>.
-                </p>
-              </div>
-            </div>
+            <ProjectContainer title="Sprout" subtitle="Personal Project, June 2020" imgsrc="sprout.png"
+              site="https://mirrorkey.dev/Sprout" github="https://github.com/mirrorkeydev/Sprout">
+              A dashboard that shows real-time statistics about my
+              plants and their environment. Offers soil moisture charts for each plant connected
+              to Sprout and environmental statistics about the plants' environment,
+              including temperature/humidity. Plus, it's pretty cute.
+            </ProjectContainer>
+            <ProjectContainer title="noms" subtitle="Google STEP Internship Capstone, Summer 2020" imgsrc="noms.png"
+                site="" github="https://github.com/googleinterns/noms">
+              A full-stack web app connecting students and college organizations
+              to battle food insecurity and food waste. noms allows college organizations to post the
+              locations of free food on campus and for students to view and receive notifications for
+              these posts.
+            </ProjectContainer>
+            <ProjectContainer title="MathLang" subtitle="Programming Language Fundamentals Final, March 2020" imgsrc="mathlang.png"
+                site="" github="https://github.com/mirrorkeydev/MathLang">
+              A stack-based language that performs basic mathematic/logic operations.
+              Values include integers, doubles, booleans, tuples, commands, and functions.
+              Can perform basic operations on values and allows conditional logic such as if/else
+              statements and while/for loops. Interpreter written in Haskell.
+            </ProjectContainer>
+            <ProjectContainer title="Visualizations" subtitle="Personal Project, February 2020" imgsrc="visualizations.png"
+                site="https://mirrorkey.dev/Visualizations" github="https://github.com/mirrorkeydev/Visualizations">
+              Various visualizations created as an exercise in data processing.
+              Includes interactive charts and original infographics, exploring
+              data such as my Netflix binges and the patterns of texts to a friend.
+            </ProjectContainer>
+            <ProjectContainer title="CatSpot" subtitle="Web Development Final, December 2019" imgsrc="catspot.png"
+                site="" github="https://github.com/mirrorkeydev/CatSpot">
+              A web app that allows students to track cat spottings on campus.
+              Cats can be given names and assigned pictures, energy levels, sociability status,
+              and a recent location. The interactive map shows cat spottings in the last 24 hours.
+            </ProjectContainer>
+            <ProjectContainer title="Appstract" subtitle="Personal Project, March 2019" imgsrc="appstract.png"
+                site="https://play.google.com/store/apps/details?id=com.melon.appstract&hl=en_US" github="https://github.com/mirrorkeydev/Appstract">
+              An artistically abstract Android icon pack. 300+ icons supported across 25+ launchers.
+              Built on the open source CandyBar dashboard. Available on the Google Play Store.
+            </ProjectContainer>
           </div>
         </div>
         <div class="sub-container">
@@ -148,11 +117,13 @@
 
 <script>
 import SecondaryHeader from '../components/SecondaryHeader.vue';
+import ProjectContainer from '../components/ProjectContainer.vue';
 
 export default {
   name: 'Projects',
   components: {
-    SecondaryHeader: SecondaryHeader
+    SecondaryHeader: SecondaryHeader,
+    ProjectContainer: ProjectContainer
   }
 };
 </script>
