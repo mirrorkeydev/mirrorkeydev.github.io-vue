@@ -5,6 +5,11 @@
         <div class="sub-container">
           <h3>code</h3>
           <div class="inside-container">
+            <ProjectContainer title="Appstract" subtitle="Personal Project, 2018 - 2020" imgsrc="appstract.png"
+                site="https://play.google.com/store/apps/details?id=com.melon.appstract&hl=en_US" github="https://github.com/mirrorkeydev/Appstract">
+              An artistically abstract Android icon pack. 250k downloads and 25k active users.
+              Built on the open source CandyBar dashboard. Available on the Google Play Store.
+            </ProjectContainer>
             <ProjectContainer title="Sprout" subtitle="Personal Project, June 2020" imgsrc="sprout.png"
               site="https://mirrorkey.dev/Sprout" github="https://github.com/mirrorkeydev/Sprout">
               A dashboard that shows real-time statistics about my
@@ -37,11 +42,6 @@
               A web app that allows students to track cat spottings on campus.
               Cats can be given names and assigned pictures, energy levels, sociability status,
               and a recent location. The interactive map shows cat spottings in the last 24 hours.
-            </ProjectContainer>
-            <ProjectContainer title="Appstract" subtitle="Personal Project, March 2019" imgsrc="appstract.png"
-                site="https://play.google.com/store/apps/details?id=com.melon.appstract&hl=en_US" github="https://github.com/mirrorkeydev/Appstract">
-              An artistically abstract Android icon pack. 300+ icons supported across 25+ launchers.
-              Built on the open source CandyBar dashboard. Available on the Google Play Store.
             </ProjectContainer>
           </div>
         </div>
