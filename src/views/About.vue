@@ -10,8 +10,7 @@
         During the school year, I work at OSU's Center for Applied
         Systems and Software, writing software for the
         Oregon Department of Transportation and the Linux Foundation. Last summer
-        I was a STEP intern at Google, and I'm currently looking for summer 2021
-        opportunities.
+        I was a STEP intern at Google, and next summer I'll be returning as a SWE intern.
       </p>
       <p>
         In my free time, I like taking care of my houseplants, attempting art, mending my

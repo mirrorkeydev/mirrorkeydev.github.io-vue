@@ -5,17 +5,17 @@
         <div class="sub-container">
           <h3>code</h3>
           <div class="inside-container">
-            <ProjectContainer title="Appstract" subtitle="Personal Project, 2018 - 2020" imgsrc="appstract.png"
-                site="https://play.google.com/store/apps/details?id=com.melon.appstract&hl=en_US" github="https://github.com/mirrorkeydev/Appstract">
-              An artistically abstract Android icon pack. 250k downloads and 25k active users.
-              Built on the open source CandyBar dashboard. Available on the Google Play Store.
-            </ProjectContainer>
             <ProjectContainer title="Sprout" subtitle="Personal Project, June 2020" imgsrc="sprout.png"
               site="https://mirrorkey.dev/Sprout" github="https://github.com/mirrorkeydev/Sprout">
               A dashboard that shows real-time statistics about my
               plants and their environment. Offers soil moisture charts for each plant connected
               to Sprout and environmental statistics about the plants' environment,
               including temperature/humidity. Plus, it's pretty cute.
+            </ProjectContainer>
+            <ProjectContainer title="Appstract" subtitle="Personal Project, 2018 - Present" imgsrc="appstract.png"
+                site="https://play.google.com/store/apps/details?id=com.melon.appstract&hl=en_US" github="https://github.com/mirrorkeydev/Appstract">
+              An artistically abstract Android icon pack. 250k downloads and 25k active users.
+              Built on the open source CandyBar dashboard. Available on the Google Play Store.
             </ProjectContainer>
             <ProjectContainer title="noms" subtitle="Google STEP Internship Capstone, Summer 2020" imgsrc="noms.png"
                 site="" github="https://github.com/googleinterns/noms">
