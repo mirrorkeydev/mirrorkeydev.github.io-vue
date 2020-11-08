@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
 html, body {
+  height: 100%;
   margin: 0;
 }
 

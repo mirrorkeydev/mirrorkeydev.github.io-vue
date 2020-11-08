@@ -43,9 +43,9 @@ export default {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  padding: 5vw;
+  padding: 10vw;
   position: fixed;
-  right: 5vw;
+  right: 1vw;
   z-index: 1;
 }
 #title
@@ -60,16 +60,15 @@ export default {
   justify-content: left;
   line-height: 13vw;
   margin: 0;
-  padding: 5vw;
+  padding: 10vw;
   position: relative;
   text-align: left;
 }
 .home
 {
   background-color: var(--placeholder-green);
-  border: white 4vw solid;
   box-sizing: border-box;
-  height: 100vh;
+  height: 100%;
 }
 .nav-link
 {
@@ -80,7 +79,6 @@ export default {
 }
 #home-video
 {
-  border: white 4vw solid;
   box-sizing: border-box;
   height: calc(100vh - calc(100vh - 100%));
   left: 0;
@@ -103,7 +101,7 @@ export default {
   }
 
   #nav-container {
-    padding: 4vw;
+    padding: 6vw;
   }
 }
 
@@ -112,6 +110,7 @@ export default {
   #title {
     font-size: 7vw;
     line-height: 7vw;
+    padding: 6vw;
   }
 
   .nav-link {
@@ -119,7 +118,7 @@ export default {
   }
 
   #nav-container {
-    padding: 2vw;
+    padding: 4vw;
   }
 }
 
