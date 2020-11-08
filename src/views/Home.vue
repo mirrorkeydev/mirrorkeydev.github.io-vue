@@ -18,13 +18,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-html, body {
-  height: calc(100vh - calc(100vh - 100%));
-  width: 100vw;
-  margin: 0;
-}
+<style lang="scss" scoped>
 
 #nav-container
 {
@@ -56,7 +50,7 @@ html, body {
 .home
 {
   background-color: var(--placeholder-green);
-  height: 100%;
+  height: 100vh;
 }
 .nav-link
 {

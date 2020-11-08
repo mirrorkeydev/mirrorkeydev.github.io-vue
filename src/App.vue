@@ -8,6 +8,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
 
+html, body {
+  margin: 0;
+}
+
 :root {
   --placeholder-green: #789c33;
 }
