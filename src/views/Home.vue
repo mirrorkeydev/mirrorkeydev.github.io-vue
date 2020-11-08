@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <video autoplay loop muted playsinline id="home-video">
+    <video autoplay loop muted playsinline id="home-video" ref="homeVideo">
       <source src="../assets/desktop-background.mp4" type="video/mp4">
     </video>
     <nav id="nav-container">
@@ -14,18 +14,35 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  mounted () {
+    const vid = this.$refs.homeVideo;
+    vid.style.opacity = 0;
+    vid.oncanplay = () => {
+      const vid = this.$refs.homeVideo;
+      this.fadein(vid);
+    };
+  },
+  methods: {
+    fadein (element) {
+      var op = 0;
+      var timer = setInterval(() => {
+        if (op >= 1) clearInterval(timer);
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ')';
+        op += op * 0.1 || 0.1;
+      }, 50);
+    }
+  }
 };
 </script>
 
 <style lang="scss" scoped>
-
 #nav-container
 {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  line-height: 13vw;
   padding: 5vw;
   position: fixed;
   right: 5vw;
@@ -43,26 +60,27 @@ export default {
   justify-content: left;
   line-height: 13vw;
   margin: 0;
-  padding: 10vw;
+  padding: 5vw;
   position: relative;
   text-align: left;
 }
 .home
 {
   background-color: var(--placeholder-green);
+  border: white 4vw solid;
+  box-sizing: border-box;
   height: 100vh;
 }
 .nav-link
 {
   color: white;
-  font-size: 3vw;
+  font-size: 4vw;
   padding: 0 1vw;
   text-decoration: none;
 }
-
 #home-video
 {
-  border: white 5vw solid;
+  border: white 4vw solid;
   box-sizing: border-box;
   height: calc(100vh - calc(100vh - 100%));
   left: 0;
