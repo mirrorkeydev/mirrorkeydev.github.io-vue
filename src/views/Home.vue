@@ -43,9 +43,9 @@ export default {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  padding: 10vw;
+  padding: 6vw;
   position: fixed;
-  right: 1vw;
+  right: 0;
   z-index: 1;
 }
 #title
@@ -73,8 +73,8 @@ export default {
 .nav-link
 {
   color: white;
-  font-size: 4vw;
-  padding: 0 1vw;
+  font-size: 4.5vw;
+  padding: 0 2vw;
   text-decoration: none;
 }
 #home-video
@@ -92,33 +92,31 @@ export default {
 /* Screens > 1000px wide */
 @media screen and (min-width: 1000px) {
   #title {
-    font-size: 10vw;
-    line-height: 10vw;
+    font-size: 10rem;
+    line-height: 9rem;
+    padding: 5rem;
   }
 
   .nav-link {
-    font-size: 2vw;
+    font-size: 2rem;
+    padding: 0 1rem;
   }
 
   #nav-container {
-    padding: 6vw;
+    padding: 4rem;
   }
 }
 
 /* Screens > 2000px wide */
 @media screen and (min-width: 2000px) {
   #title {
-    font-size: 7vw;
-    line-height: 7vw;
-    padding: 6vw;
+    font-size: 12rem;
+    line-height: 11rem;
+    padding: 7rem;
   }
 
   .nav-link {
-    font-size: 1vw;
-  }
-
-  #nav-container {
-    padding: 4vw;
+    font-size: 1.5rem;
   }
 }
 
