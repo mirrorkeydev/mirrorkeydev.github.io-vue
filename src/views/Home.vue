@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <video autoplay loop muted playsinline id="home-video" ref="homeVideo">
+    <video autoplay loop muted playsinline id="home-video" ref="homeVideo" class="blur">
       <source src="../assets/desktop-background.mp4" type="video/mp4">
     </video>
     <nav id="nav-container">
@@ -32,6 +32,7 @@ export default {
         element.style.filter = 'alpha(opacity=' + op * 100 + ')';
         op += op * 0.1 || 0.1;
       }, 50);
+      element.oncanplay = undefined;
     }
   }
 };
@@ -117,6 +118,14 @@ export default {
 
   .nav-link {
     font-size: 1.5rem;
+  }
+
+  .blur {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  -o-filter: blur(10px);
+  -ms-filter: blur(10px);
+  filter: blur(10px);
   }
 }
 
